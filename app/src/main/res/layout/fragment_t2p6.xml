@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".t2p6">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese su nombre: "
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtNombreT2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese su edad: "
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtEdadT2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnEdadNombreT2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mostrar edad y nombre"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <TextView
+        android:id="@+id/txtNombreyEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"/>
+
+</LinearLayout>

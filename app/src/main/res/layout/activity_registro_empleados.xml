@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroEmpleados">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:text="Ficha de registro de Empelados"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtNumDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Número de Documento"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tipo de documento:"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rbCedula"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_marginRight="10dp"
+                            android:text="Cédula"/>
+
+                        <RadioButton
+                            android:id="@+id/rbContra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_marginRight="10dp"
+                            android:text="Pasaporte"/>
+
+                        <RadioButton
+                            android:id="@+id/rbTarjetaIdentidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:text="Tarjeta de identidad"
+                            android:layout_gravity="right"
+                            android:textAlignment="gravity"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Nombre"
+                android:inputType="textAutoComplete"/>
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Apellidos"
+                android:inputType="textAutoComplete"/>
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Telefono"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Dirección"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="E - Mail"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/txtIdEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="ID Empresa a vincular"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/txtCargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Cargo"
+                android:inputType="text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:height="5dp"
+                    android:textSize="20sp"
+                    android:padding="1dp"
+                    android:textStyle="bold"
+                    android:text="$"
+                    />
+
+                <EditText
+                    android:id="@+id/txtSalario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:height="5dp"
+                    android:hint="Salario"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegistrarEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:text="Registrar Empleado"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

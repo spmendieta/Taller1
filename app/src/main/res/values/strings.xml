@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Android - Talleres</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tagEmpleados">Empleados</string>
+    <string name="tagEmpresas">Empresas</string>
+    <string name="tagedicionEmpresas">Edición Empresas</string>
+    <string name="tagedicionEmpleados">Edición Empleados</string>
+    <string name="descListaEmpresas">Desplegar una lista de empresas registradas</string>
+    <string name="descListaEmpleados">Desplegar una lista de empleados registrados</string>
+    <string name="descEditarEmpleados">Editar información de los empleados</string>
+    <string name="descEditarEmpresas">Editar información de las empresas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_taller2">Taller2</string>
+    <string name="title_activity_taller3">Taller3</string>
+    <string name="ingresar_numero">Ingrese número:</string>
+</resources>

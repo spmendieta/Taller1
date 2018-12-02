@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".CrearCiudad">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Gestionar Ciudad"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNombCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Nombre de la ciudad"
+        android:inputType="textAutoComplete" />
+
+    <EditText
+        android:id="@+id/txtCantHabitantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Cantidad de Habitantes"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Latitud"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Longitud"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnInsertarCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar Ciudad"
+        android:layout_marginTop="5dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".t2p8">
+
+
+    <TextView
+        android:id="@+id/nombElef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese nombre del Elefante:"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtElefanteNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombElef"/>
+
+    <TextView
+        android:id="@+id/pesoElef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese peso del Elefante:"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_below="@id/txtElefanteNombre"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="@id/pesoElef"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="134dp"
+        android:layout_marginRight="1dp"
+        android:text="Lbs"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtElefantePeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pesoElef"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/etiquetaLongElef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese longitud del Elefante"
+        android:layout_below="@id/txtElefantePeso"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <EditText
+        android:id="@+id/txtElefanteLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etiquetaLongElef"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtElefanteLongitud"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="Pies"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnConvertirCalculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtElefanteLongitud"
+        android:layout_marginTop="10dp"
+        android:text="Calcular y convertir valores"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <TextView
+        android:id="@+id/txtConversionElefante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnConvertirCalculo"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+</RelativeLayout>
